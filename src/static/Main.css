@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #232536;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #232536;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-links {
+    padding-right: 40px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: rgb(195, 195, 195);
+}
+
+.subscribe-btn {
+    background-color: white;
+    color: #232536;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    background-color: #232536;
+    color: white;
+    padding: 80px 0;
+}
+  
+.footer-content {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+  
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+  
+.footer-links a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.newsletter h3 {
+    width: 550px;
+    color: white;
+    font-size: 36px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+  
+.newsletter-form input {
+    width: 323px;
+    height: 32px;
+    padding: 10px;
+    border: 1px solid #4C4C4C;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+  
+.newsletter-form button {
+    background-color: #FFD050;
+    color: #232536;
+    font-size: 18px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    padding: 16px 48px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.contact-info {
+    opacity: 0.7;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #6D6E76;
+}

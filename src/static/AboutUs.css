@@ -1,0 +1,520 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #232536;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #232536;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-links {
+    padding-right: 40px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: rgb(195, 195, 195);
+}
+
+.subscribe-btn {
+    background-color: white;
+    color: #232536;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Combined About Us and Stats Section */
+.about-stats {
+    width: 1280px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* About Us Section */
+.about-us {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.about-us .left {
+    width: 40%;
+    padding: 64px;
+    background-color: white;
+}
+
+.about-us .right {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 34px;
+}
+
+.about-us h2 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.about-us h1 {
+    font-size: 48px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+
+/* Stats Section */
+.stats {
+    position: relative;
+    height: 444px;
+    background: url('../images/image.png') no-repeat;
+    background-size: cover;
+    margin-top: -100px; /* Поднимаем stats вверх, чтобы about-us перекрывал его */
+    z-index: 5; /* stats будет под about-us */
+}
+
+.stats .background {
+    position: absolute;
+    width: 630px;
+    height: 156px;
+    left: 109px;
+    top: 265px;
+    background: #FFD050;
+}
+
+.stats .stat {
+    position: absolute;
+    top: 297px;
+    color: #232536;
+}
+
+.stats .stat h3 {
+    font-size: 56px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 0;
+}
+
+.stats .stat p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.stats .total-blog {
+    left: 157px;
+}
+
+.stats .views {
+    left: 346px;
+}
+
+.stats .active-users {
+    left: 555px;
+}
+
+.stats > .pattern {
+    position: absolute;
+    top: 421px;
+    left: 108px;
+    width: 1061px;
+    height: 23px;
+    background: linear-gradient(to left, #FFD050 70%, #592EA9 30%);
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    width: 1064px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background: #F4F0F8;
+    padding: 128px 108px;
+    position: relative;
+    z-index: 10;
+}
+
+.mission-vision .column {
+    width: 48%;
+}
+
+.mission-vision h2 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.mission-vision h3 {
+    font-size: 28px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.mission-vision p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+
+/* Our Team of Creatives Section */
+.our-team {
+    display: flex;
+    justify-content: space-between;
+    padding: 128px 128px;
+}
+
+.our-team .content {
+    display: flex;
+    width: 50%;
+    padding-right: 64px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-team h2 {
+    font-size: 36px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.our-team h3 {
+    font-size: 24px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.our-team p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+
+.our-team .image {
+    width: 50%;
+    position: relative;
+}
+
+.our-team .image img {
+    width: 100%;
+    height: auto;
+}
+
+.our-team .image .shape {
+    width: 103px;
+    height: 116px;
+    background: #FFD050;
+    position: absolute;
+    top: 114px;
+    left: -50px;
+    border-top-left-radius: 50px;
+}
+
+/* Why We Started Section */
+.why-we-started {
+    display: flex;
+    justify-content: space-between;
+    padding: 128px 108px;
+}
+
+.why-we-started .image {
+    width: 50%;
+    position: relative;
+}
+
+.why-we-started .image img {
+    width: 100%;
+    height: auto;
+}
+
+.why-we-started .image .circle {
+    width: 74px;
+    height: 74px;
+    background: #592EA9;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+    left: 107px;
+}
+
+.why-we-started .content {
+    display: flex;
+    width: 50%;
+    padding-left: 64px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why-we-started h2 {
+    font-size: 36px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.why-we-started h3 {
+    font-size: 24px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.why-we-started p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+
+/* List of Authors Section */
+.list-of-authors {
+    padding: 128px 108px;
+    background: white;
+}
+
+.list-of-authors h2 {
+    font-size: 36px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.authors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.authors-grid > .author {
+    background: #F4F4F4;
+    padding: 40px;
+    text-align: center;
+}
+
+.author img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.author h3 {
+    font-size: 28px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.author p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6D6E76;
+}
+
+/* Join Our Team */
+.join-our-team {
+    padding: 80px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 450px;
+    margin: auto;
+}
+
+.join-title {
+    color: #232536;
+    font-size: 36px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.join-description {
+    color: #6D6E76;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.join-button {
+    background-color: #FFD050;
+    color: #232536;
+    font-size: 18px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 48px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #232536;
+    color: white;
+    padding: 80px 0;
+}
+  
+.footer-content {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+  
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+  
+.footer-links a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.newsletter h3 {
+    width: 550px;
+    color: white;
+    font-size: 36px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+  
+.newsletter-form input {
+    width: 323px;
+    height: 32px;
+    padding: 10px;
+    border: 1px solid #4C4C4C;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+  
+.newsletter-form button {
+    background-color: #FFD050;
+    color: #232536;
+    font-size: 18px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    padding: 16px 48px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.contact-info {
+    opacity: 0.7;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #6D6E76;
+}
