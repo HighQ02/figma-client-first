@@ -1,0 +1,116 @@
+
+/* Вкладки */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Стили для блока часов */
+.clock {
+    background-color: #F4B400;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 6%;
+}
+
+/* Стили для блока часов */
+.timer {
+    background-color: #F4B400;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    right: 9%;
+}
+
+.timer-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+}
+
+.screamer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/screamer.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+/* Общие стили для контейнера */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F7F7F7;
+}
+
+/* Стили формы регистрации */
+.registration-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+  
+.registration-form h2 {
+    margin-bottom: 20px;
+}
+  
+.registration-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+  
+.registration-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+  
+.registration-form button {
+    background: #F4B400;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.registration-form button:hover {
+    background: #d99d00;
+}
+  

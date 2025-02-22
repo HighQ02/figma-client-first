@@ -4,6 +4,7 @@ import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import Home from './jsx/HomePage/Home';
 import About from './jsx/AboutPage/AboutUs';
 import Contact from './jsx/ContactPage/ContactUs';
+import Authorization from './jsx/AuthorizationPage/Authorization';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
                 <Link to="/Blog">Blog</Link>
                 <Link to="/AboutUs">About Us</Link>
                 <Link to="/ContactUs">Contact us</Link>
-                <button class="subscribe-btn">Subscribe</button>
+                <Link to="/Authorization"><button class="register-btn">Register</button></Link>
             </div>
         </nav>
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='/AboutUs' element={<About />}/>
             <Route path='/ContactUs' element={<Contact />}/>
             <Route path='/PrivacyPolicy' element={<Home />}/>
+            <Route path='/Authorization' element={<Authorization />}/>
         </Routes>
 
         {/* Footer */}
