@@ -2,6 +2,7 @@ import './App.css';
 import '../src/static/Main.css';
 import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import Home from './jsx/HomePage/Home';
+import Blog from './jsx/BlogPage/Blog';
 import About from './jsx/AboutPage/AboutUs';
 import Contact from './jsx/ContactPage/ContactUs';
 import Authorization from './jsx/AuthorizationPage/Authorization';
@@ -23,7 +24,7 @@ function App() {
 
         <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/Blog' element={<Home />}/>
+            <Route path='/Blog' element={<Blog />}/>
             <Route path='/AboutUs' element={<About />}/>
             <Route path='/ContactUs' element={<Contact />}/>
             <Route path='/PrivacyPolicy' element={<Home />}/>
