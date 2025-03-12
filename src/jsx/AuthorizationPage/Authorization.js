@@ -2,6 +2,7 @@ import React from 'react';
 import Register from './Register';
 import Clock from './Clock';
 import Timer from './Timer';
+import Quizizz from './Quizizz';
 
 function Authorization() {
   return (
@@ -9,6 +10,7 @@ function Authorization() {
         <Clock />
         <Register />
         <Timer />
+        <Quizizz />
     </div>
   );
 }
